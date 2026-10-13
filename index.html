@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>ENCUESTA</h1>
+        <p>para un viaje</p>
+        <form>
+            <h4><label for="fname">1.Nombre del visitante:</label></h4>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+
+            <h4><label>2.Elija su genero:</label></h4>
+            <input type="radio" id="Masculino" name="generoj1" value="Masculino">
+            <label for="Masculino">Masculino</label><br>
+            <input type="radio" id="Femenino" name="generoj1" value="Femenino">
+            <label for="Femenino">Femenino</label><br>
+            <input type="radio" id="otro" name="generoj1" value="otro">
+            <label for="otro">otro</label><br>
+            <input type="radio" id="No responde" name="generoj1" value="No responde">
+            <label for="No responde">Prefiero no responder</label><br>
+
+            <h4><label for="provincia">3.Provincia de procedencia</label></h4>
+            <select id="provincia" name="provincia">
+            <option value="Cotopaxi">Cotopaxi</option>
+            <option value="Cañar">Cañar</option>
+            <option value="Carchi">Carchi</option>
+            <option value="Manabi">Manabi</option>
+            </select>
+
+            <h4> <label>4.Fecha que nos visita  </label> </h4>
+            <input type="date" id="Visita" name="Visita">
+
+            <h4> <label>5.Duracion del viaje  1-30</label> </h4>
+            <input type="number" id="calf" name="cal" min="1" max="30">
+            
+            <h4><label>6. Que actividades le gustaria realizar?</label></h4>
+            <input type="checkbox" id="senderismo" name="actividades" value="Senderismo">
+            <label for="senderismo">Senderismo</label><br>
+            <input type="checkbox" id="fotografia" name="actividades" value="Fotografia">
+            <label for="fotografia">Fotografia</label><br>
+            <input type="checkbox" id="camping" name="actividades" value="Camping">
+            <label for="camping">Camping</label><br>
+            <input type="checkbox" id="observacion" name="actividades" value="Observacion">
+            <label for="observacion">Observacion de flora y fauna</label>
+            <br><br>
+
+            <h4><label for="correo">7. Cual es su correo electronico de contacto?</label></h4>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+
+
+            <h4> <label>8.Cual es su edad </label> </h4>
+            <input type="number" id="edad" name="edad" min="1" max="120" placeholder="Ingrese su edad">
+
+
+            <h4> <label>9.Que tan seguro nos considera del 1 al 5 </label> </h4>
+            <input type="range" id="seguridad" name="seguridad" min="1" max="5" value="3">
+
+            <h4> <label>10.Describanos como le gustaria que sea el viaje </label> </h4>
+            <textarea name="message" style="width:400px; height:300px;"></textarea>
+
+            <br><br>
+            <input type="submit" value="Submit">
+
+
+
+        </form>
+    </section>
+
+
+
+</body>
+</html>
